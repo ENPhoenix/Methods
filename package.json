@@ -1,0 +1,29 @@
+{
+  "name": "classes-inheritance",
+  "version": "1.0.0",
+  "description": "Иерархия классов персонажей",
+  "type": "module",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "babel-jest": "^29.0.0",
+    "babel-loader": "^9.1.0",
+    "eslint": "^8.30.0",
+    "jest": "^29.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": ["text", "lcov", "html"]
+  }
+}
