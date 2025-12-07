@@ -2,6 +2,6 @@ import Character from './Character.js';
 
 export default class Zombie extends Character {
   constructor(name) {
-    super(name, 'Zombie');
+    super(name, 'Zombie', 40, 10);
   }
 }
